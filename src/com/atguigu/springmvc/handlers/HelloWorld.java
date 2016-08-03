@@ -12,7 +12,7 @@ public class HelloWorld {
     public String testParam(@RequestParam(value = "username",required = false,defaultValue = "hello") String str,@RequestParam(value = "age") Integer age){
         System.out.println("username:"+str);
         System.out.println("age:"+age);
-        System.out.println("helo");
+        System.out.println("hel123o");
         return SUCCESS;
     }
 
