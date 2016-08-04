@@ -8,6 +8,12 @@ public class HelloWorld {
 
     private static final String SUCCESS = "success";
 
+    @RequestMapping("/123fku")
+    public String  testRest(){
+        System.out.println("hello");
+
+        return SUCCESS;
+    }
     @RequestMapping(value = "/testParam",method = RequestMethod.GET)//不好意思必须是DELETE,否则通不过的
     public String testParam(@RequestParam(value = "username",required = false,defaultValue = "hello") String str,@RequestParam(value = "age") Integer age){
         System.out.println("username:"+str);
